@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.flat-html5-player-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flat-player {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.flat-video-preview-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+video.flat-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flat-video-footer {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.flat-video-progressbar {
+    height: 6px;
+    background-color: white;
+    width: 100%;
+}
+
+.flat-video-current-progress {
+    height: 100%;
+    width: 30%;
+    background-color: #4aa4e2;
+}
+
+.flat-video-controls {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.flat-video-control-single {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.flat-video-controls-left,
+.flat-video-controls-right {
+    display: flex;
+}
+
+.flat-video-control-single:hover {
+    color: #4aa4e2;
+}
+
+.flat-video-control-single:focus {
+    outline: none;
+}
+
+.flat-video-volume-rocker {
+    display: flex;
+    align-items: center;
+}
+
+.flat-video-volume-progress {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.flat-video-volume-progress-current {
+    width: 30%;
+    background-color: #4aa4e2;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.flat-video-time-container {
+    font-size: small;
+    line-height: 2;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
